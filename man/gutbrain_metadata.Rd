@@ -7,12 +7,16 @@
 \format{
 A data frame  with 30 rows and 3 variables:
 \describe{
-\item{age}{Age}
-\item{mouse_status}{ASD or control}
-\item{sex}{Sex}
-\item{source_name}{source name}
-\item{tissue}{brain tissue sampled}
-\item{condition}{Condition}
+\item{SRA_id}{The SRA identifier for that specific sample}
+\item{geo_accession}{The GEO identifier for the concatenated sample}
+\item{source_name}{Human host identifier for human who donated microbiome sample}
+\item{title}{Human host identifier + mouse identifier}
+\item{bio_sample}{Human host identifier + mouse identifier, codified}
+\item{host_donor}{Human host identifier for human who donated microbiome sample based on renamed host metadata from original study}
+\item{development}{ASD or typically developing. This data contains only typically developing (TD) samples}
+\item{tissue}{Prefrontal cortex or striatum tissue sample}
+\item{condition}{Combination identifier of development and tissue}
+\item{replicate}{Either A or B, to denote between specific samples}
 }
 }
 \source{
