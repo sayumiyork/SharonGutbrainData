@@ -4,7 +4,8 @@ library("DESeq2")
 
 #processed files
 gutbrain<-readRDS("data-raw/gutbrain.RDS") #DESeq2 object
-gutbrain_metadata<-read.csv("data-raw/gutbrain_metadata.csv", row.names = 1) #Metadata for DESeq2 object
+gutbrain_unfilt<-readRDS("data-raw/gutbrain_unfilt.RDS") #Unfiltered DESeq2 object
+gutbrain_metadata<-read.csv("data-raw/gutbrain_metadata.csv", row.names = 1) #Metadata for DESeq2 objects
 
 #raw files
 mouse_gutbrain_de_counts_asd <- read.csv("data-raw/mouse_gutbrain_de_counts_asd.csv")
@@ -20,6 +21,7 @@ mouse_gutbrain_de_tissuetype_in_controlmice <- read.csv("data-raw/mouse_gutbrain
 
 #usethis processed files
 usethis::use_data(gutbrain, overwrite = TRUE)
+usethis::use_data(gutbrain_unfilt, overwrite = TRUE)
 usethis::use_data(gutbrain_metadata, overwrite = TRUE)
 
 
