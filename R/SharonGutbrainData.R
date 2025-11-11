@@ -18,7 +18,7 @@
 #'
 #'  Sample meta data for the gutbrain data
 #'
-#' @format A data frame  with 30 rows and 3 variables:
+#' @format A data frame with 30 rows and 3 variables:
 #' \describe{
 #'   \item{SRA_id}{The SRA identifier for that specific sample}
 #'   \item{geo_accession}{The GEO identifier for the concatenated sample}
